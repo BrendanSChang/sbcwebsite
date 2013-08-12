@@ -127,10 +127,23 @@
 			margin: 0;
 		}
 		
-		.widget img {
+		.widget .video {
+			text-align: center;
+			width: 420px;
+			height: 310px;
+		}
+		
+		.widget .video a img {
 			-moz-box-shadow: 0 0 5px #555555;
 			-webkit-box-shadow: 0 0 5px #555555;
 			box-shadow: 0 0 5px #555555;
+			width: 420px;
+			height: 310px;
+			background: url('images/videoplaceholder.png');
+		}
+		
+		.widget .video a:hover img {
+			background-position: 0 310px;
 		}
 		
 		.footer {
@@ -208,7 +221,7 @@
 		<div class="grid_6 widget left">
 			<article>
 				<h1>About SBC</h1>
-				<p style="text-align: center;"><a href="http://www.youtube.com/watch?v=-V3VtEpR4M8" class="html5lightbox"><img src="images/videoplaceholder.png"></a></p>
+				<p class="video"><a href="http://www.youtube.com/watch?v=-V3VtEpR4M8" class="html5lightbox"><img src="images/trans.png"></a></p>
 				<p>The Sloan Business Club provides our 1,600+ members with an extensive selection of educational events, an expansive business network, and a solid mentorship base, enabling students to fully utilize their academic backgrounds in launching strong business careers.</p>
 			</article>
 		</div>
