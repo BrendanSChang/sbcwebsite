@@ -15,10 +15,10 @@
 		body {
 			padding: 0;
 			margin: 0;
-			background-color: #D1DFED;
+			background-color: #FFFFFF;
 			font-family: sans-serif;
 			font-size: 13px;
-			color: #16385C;
+			color: #001C3D;
 			overflow-x: hidden;
 			text-align: justify;
 		}
@@ -32,12 +32,9 @@
 		}
 		
 		h1 {
-			font-size: 24px;
-			font-variant: small-caps;
-			background-color: #16385C;
-			color: #FFFFFF;
+			color: #16385C;
+			font-size: 26px;
 			margin: 0;
-			padding-left: 20px;
 		}
 		
 		hr {
@@ -52,7 +49,6 @@
 		
 		p {
 			line-height: 1.5em;
-			padding-left: 20px;
 		}
 		
 		.left {
@@ -65,9 +61,11 @@
 		
 		.main {
 			background-color: #FFFFFF;
+			/*
 			-moz-box-shadow: 0 0 10px #000000;
 			-webkit-box-shadow: 0 0 10px #000000;
 			box-shadow: 0 0 10px #000000;
+			*/
 		}
 		
 		.menu {
@@ -98,6 +96,7 @@
 			text-align: left;
 		}
 		
+		/*
 		.menu td:not(#banner):hover {
 			background-color: #16385C;
 		}
@@ -105,12 +104,17 @@
 		.menu td:not(#banner):hover a {
 			color: #FFFFFF;
 		}
+		*/
 		
 		.menu td a {
-			font-size: 14px;
+			font-size: 16px;
 			font-weight: bold;
 			color: #16385C;
 			text-decoration: none;
+		}
+		
+		.menu td a:hover {
+			border-bottom: 2px solid;
 		}
 		
 		.featurebar {
@@ -129,21 +133,31 @@
 		
 		.widget .video {
 			text-align: center;
-			width: 420px;
-			height: 310px;
+			width: 100%;
 		}
 		
 		.widget .video a img {
 			-moz-box-shadow: 0 0 5px #555555;
 			-webkit-box-shadow: 0 0 5px #555555;
 			box-shadow: 0 0 5px #555555;
-			width: 420px;
-			height: 310px;
+			width: 250px;
+			height: 188px;
 			background: url('images/videoplaceholder.png');
 		}
 		
 		.widget .video a:hover img {
-			background-position: 0 310px;
+			background-position: 0 189px;
+		}
+		
+		input.subscribe {
+			border: 0;
+			width: 100px;
+			height: 25px;
+			background: url('images/subscribe.png');
+		}
+		
+		input.subscribe:hover {
+			background-position: 0 25px;
 		}
 		
 		.footer {
@@ -182,7 +196,7 @@
 			
 			function initialize() {
 				$( '.bxSlider' ).bxSlider({
-					slideWidth: 900
+					slideWidth: 940
 				});
 			}
 			
@@ -218,17 +232,17 @@
 			</ul>
 		</div>
 		<div class="clear"></div>
-		<div class="grid_6 widget left">
+		<div class="grid_5 widget left">
 			<article>
 				<h1>About SBC</h1>
-				<p class="video"><a href="http://www.youtube.com/watch?v=-V3VtEpR4M8" class="html5lightbox"><img src="images/trans.png"></a></p>
 				<p>The Sloan Business Club provides our 1,600+ members with an extensive selection of educational events, an expansive business network, and a solid mentorship base, enabling students to fully utilize their academic backgrounds in launching strong business careers.</p>
+				<p class="video"><a href="http://www.youtube.com/watch?v=-V3VtEpR4M8" class="html5lightbox"><img src="images/trans.png"></a></p>
 			</article>
 		</div>
-		<div class="grid_6 widget right">
+		<div class="grid_7 widget right">
 			<article>
 				<h1>Join Our Mailing List</h1>
-				<p><form><input type="text" placeholder="Email address"><button type="submit">Subscribe!</button></form></p>
+				<p><form><input type="text" placeholder="Email address"><input type="submit" value="" class="subscribe"></form></p>
 			</article>
 		</div>
 		<div class="clear"></div>
