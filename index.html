@@ -26,6 +26,13 @@
 		
 		a {
 			border: 0;
+			font-weight: bold;
+			color: #16385C;
+			text-decoration: none;
+		}
+		
+		a:hover {
+			color: #5D99DE;
 		}
 		
 		a img {
@@ -53,11 +60,11 @@
 		}
 		
 		.left {
-			padding-right: 10px;
+			padding-right: 15px;
 		}
 		
 		.right {
-			padding-left: 10px;
+			padding-left: 15px;
 		}
 		
 		.main {
@@ -88,7 +95,6 @@
 		.menu td {
 			vertical-align: bottom;
 			min-width: 50px;
-			border: 0;
 			padding: 0px 7px 15px 7px;
 		}
 		
@@ -109,13 +115,6 @@
 		
 		.menu td a {
 			font-size: 16px;
-			font-weight: bold;
-			color: #16385C;
-			text-decoration: none;
-		}
-		
-		.menu td:not(#banner) a:hover {
-			color: #5D99DE;
 		}
 		
 		.featurebar {
@@ -146,19 +145,58 @@
 			background: url('images/videoplaceholder.png');
 		}
 		
-		.widget .video a:hover img {
-			background-position: 0 75px;
+		.widget .form {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 22px;
+		}
+		
+		.widget input {
+			margin: 0;
+			padding: 0;
+			width: 201px;
+			height: 18px;
 		}
 		
 		input.subscribe {
 			border: 0;
-			width: 100px;
-			height: 25px;
+			margin: 0 0 0 5px;
+			padding: 0;
+			width: 90px;
+			height: 22px;
 			background: url('images/subscribe.png');
+			vertical-align: bottom;
 		}
 		
-		input.subscribe:hover {
-			background-position: 0 25px;
+		input.subscribe:active {
+			background-position: 0 22px;
+		}
+		
+		#upcomingevents {
+			color: #888888;
+			width: 100%;
+			height: 250px;
+			overflow-y: auto;
+		}
+		
+		#upcomingevents table {
+			width: 100%;
+			border-spacing: 0;
+		}
+		
+		#upcomingevents tr {
+			width: 100%;
+		}
+		
+		#upcomingevents td {
+			border-bottom: 1px solid #DDDDDD;
+			padding: 10px 0 10px 0;
+			text-align: justify;
+		}
+		
+		#upcomingevents tr:first-child td {
+			padding-top: 0;
 		}
 		
 		.footer {
@@ -209,14 +247,21 @@
 		</div>
 		<div class="grid_4 widget left right">
 			<article>
-				<h1>Lorem ipsum</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu leo sollicitudin, aliquam sapien consectetur, posuere augue. Phasellus ut feugiat erat. Vestibulum in turpis aliquam, sodales magna et, malesuada metus. Fusce adipiscing euismod sapien. Fusce eleifend pretium nulla, at convallis magna tempus vitae. Ut tristique, nibh ac ornare...</p>
+				<h1>Upcoming Events</h1>
+				<p />
+				<div id="upcomingevents">
+					<table>
+						<tr><td><a href="">2012 Internship Networking Exclusive</a><br />Tuesday, Dec 4, 2012, 7:00 PM @ Marriott Hyatt</td></tr>
+						<tr><td><a href="">2012 Awards Convocation</a><br />Wednesday, May 9, 2012, 4:00 PM @ 10-250</td></tr>
+					</table>
+				</div>
 			</article>
 		</div>
 		<div class="grid_4 widget right">
 			<article>
 				<h1>Join Our Mailing List</h1>
-				<p><form><input type="text" placeholder="Email address"><input type="submit" value="" class="subscribe"></form></p>
+				<p><form><input type="text" placeholder="your-email@mit.edu"><input type="submit" value="" class="subscribe"></form></p>
+				<p>Sign up to hear about upcoming networking events, panel discussions, and more!</p>
 			</article>
 		</div>
 		<div class="clear"></div>
@@ -248,7 +293,7 @@
 			
 			function initialize() {
 				$( '.bxSlider' ).bxSlider({
-					slideWidth: 940
+					slideWidth: 960
 				});
 			}
 			
