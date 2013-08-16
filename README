@@ -1,14 +1,4 @@
 TODO:
--color scheme and layout
----get rid of border shadows
----make video sprite smaller and update image
----update control image for content slider
----fix link style (simple underline or change color)
----style subscribe section
----create calendar
----make headers cleaner
----finish footer
-
 -django and database migration
 ---mit sql
 ---create models
@@ -17,4 +7,4 @@ TODO:
 -----events/blogs
 ---create templates and views
 ---find out how to host images
----create admin interface (potential that django does this)
+---create admin interface
