@@ -7,231 +7,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="960grid/code/css/960_12_col.css">
 	<link rel="stylesheet" type="text/css" href="bxslider/jquery.bxslider.css">
-	<!--Move to external stylesheet-->
-	<style type="text/css">
-		html {
-			overflow-x: hidden;
-			height: 100%;
-		}
-		
-		body {
-			padding: 0;
-			margin: 0;
-			background-color: #FFFFFF;
-			font-family: sans-serif;
-			font-size: 13px;
-			color: #001C3D;
-			overflow-x: hidden;
-			height: 100%;
-			text-align: justify;
-		}
-		
-		a {
-			border: 0;
-			font-weight: bold;
-			color: #16385C;
-			text-decoration: none;
-		}
-		
-		a:hover {
-			color: #5D99DE;
-		}
-		
-		a img {
-			border: 0;
-		}
-		
-		h1 {
-			color: #16385C;
-			font-size: 26px;
-			margin: 0;
-		}
-		
-		hr {
-			margin: 0;
-			padding: 0;
-			width: 100%;
-			height: 2px;
-			background-color: #16385C;
-			border: 0;
-			border-bottom: 2px solid #CCCCCC;
-		}
-		
-		table {
-			width: 100%;
-			border-spacing: 0;
-		}
-		
-		tr {
-			width: 100%;
-		}
-		
-		p {
-			line-height: 1.5em;
-		}
-		
-		.left {
-			padding-right: 15px;
-		}
-		
-		.right {
-			padding-left: 15px;
-		}
-		
-		.main {
-			background-color: #FFFFFF;
-			/*
-			-moz-box-shadow: 0 0 10px #000000;
-			-webkit-box-shadow: 0 0 10px #000000;
-			box-shadow: 0 0 10px #000000;
-			*/
-		}
-		
-		.menu {
-			width: 100%;
-			margin: 0;
-			text-align: center;
-		}
-		
-		.menu tr {
-			height: 110px;
-			vertical-align: bottom;
-		}
-		
-		.menu td {
-			vertical-align: bottom;
-			min-width: 50px;
-			padding: 0px 7px 15px 7px;
-		}
-		
-		.menu td#banner {
-			width: 100%:
-			padding-left: 10px;
-			text-align: left;
-		}
-		
-		/*
-		.menu td:not(#banner):hover {
-			background-color: #16385C;
-		}
-		
-		.menu td:not(#banner):hover a {
-			color: #FFFFFF;
-		}
-		*/
-		
-		.menu td a {
-			font-size: 16px;
-		}
-		
-		.featurebar {
-			padding: 0;
-			margin: 30px auto 10px auto;
-		}
-		
-		.featurebar ul.bxSlider {
-			padding: 0;
-			margin: 0;
-		}
-		
-		.widget {
-			margin: 0;
-		}
-		
-		.widget .video {
-			text-align: center;
-			width: 100%;
-		}
-		
-		.widget .video a img {
-			-moz-box-shadow: 0 0 5px #555555;
-			-webkit-box-shadow: 0 0 5px #555555;
-			box-shadow: 0 0 5px #555555;
-			width: 100%;
-			height: 75px;
-			background: url('images/videoplaceholder.png');
-		}
-		
-		.widget .form {
-			margin: 0;
-			padding: 0;
-			width: 100%;
-			height: 22px;
-		}
-		
-		.widget input {
-			margin: 0;
-			padding: 0;
-			width: 201px;
-			height: 18px;
-		}
-		
-		input.subscribe {
-			border: 0;
-			margin: 0 0 0 5px;
-			padding: 0;
-			width: 90px;
-			height: 22px;
-			background: url('images/subscribe.png');
-			vertical-align: bottom;
-		}
-		
-		input.subscribe:active {
-			background-position: 0 22px;
-		}
-		
-		#calendar {
-			color: #888888;
-			width: 100%;
-			height: 250px;
-			overflow-y: auto;
-		}
-		
-		#calendar td {
-			border-bottom: 1px solid #DDDDDD;
-			padding: 10px 0 10px 0;
-			text-align: justify;
-		}
-		
-		#calendar tr:first-child td {
-			padding-top: 0;
-		}
-		
-		.footer {
-			margin: 0;
-			bottom: 0;
-			width: 100%;
-		}
-		
-		.footer table {
-			margin-top: 10px;
-			text-align: left;
-		}
-		
-		.footer table tr:first-child {
-			margin-top: 10px;
-		}
-		
-		.footer table tr:last-child {
-			margin-top: 50px;
-		}
-		
-		.footer table tr td:last-child {
-			width: 50%;
-			text-align: right;
-		}
-		
-		#copyright {
-			color: #AAAAAA;
-			font-size: 12px;
-			vertical-align: bottom;
-			padding-bottom: 5px;
-		}
-		
-		.footer p {
-			vertical-align: bottom;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
 	<div class="container_12 main">
@@ -284,6 +60,9 @@
 				<h1>Stay Connected</h1>
 				<p><form><input type="text" placeholder="your-email@mit.edu"><input type="submit" value="" class="subscribe"></form></p>
 				<p>Join our mailing list to hear about upcoming networking events, panel discussions, and more!</p>
+				<br />
+				<p style="text-align: center;"><a href="https://www.facebook.com/MITsbc"><img src="images/FB-f-Logo__blue_50.png" /></a></p>
+				<p style="text-align: center;">Follow us on Facebook!</p>
 			</article>
 		</div>
 		<div class="clear"></div>
@@ -291,52 +70,21 @@
 		<div class="grid_12 footer">
 			<table>
 				<tr>
+					<td><a href="http://web.mit.edu/"><img src="http://web.mit.edu/graphicidentity/interface/mit-greygrey-footer1.gif" alt="MIT" width="334" height="36" border="0" /></a></td>
 					<td><a href="#">Home</a></td>
 					<td><a href="#">About</a></td>
 					<td><a href="#">Events</a></td>
 					<td><a href="#">Sponsors</a></td>
 					<td><a href="#">Contact Us</a></td>
 					<td><a href="#">Donate</a></td>
-					<td><a href="https://www.facebook.com/MITsbc"><img src="images/FB-f-Logo__blue_50.png" /></a></td>
-				</tr>
-				<tr>
-					<td colspan=6><a href="http://web.mit.edu/"><img src="http://web.mit.edu/graphicidentity/interface/mit-greygrey-footer1.gif" alt="MIT" width="334" height="36" border="0" /></a></td>
-					<td id="copyright">&copy; 2013 MIT SBC</td>
 				</tr>
 			</table>
+			<br />
+			<p id="copyright">&copy; 2013 MIT SBC</p>
 		</div>
     </div>
-	
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script>
-		$( 'document' ).ready(function() {
-			/* to protect against unloaded script */
-			function load(src, callback) {
-				var script = document.createElement('script');
-				script.setAttribute('type', "text/javascript");
-				script.setAttribute('src', src);
-				var loaded = false;
-				if(callback) {
-					script.onload = function() {
-						if(!loaded) {
-							callback();
-						}
-						loaded = true;
-					};
-				}
-				document.getElementsByTagName('head')[0].appendChild(script);
-			}
-			
-			function initialize() {
-				$( '.bxSlider' ).bxSlider({
-					slideWidth: 960
-				});
-			}
-			
-			load('html5lightbox/html5lightbox.js');
-			load('bxslider/jquery.bxslider.min.js', initialize);
-		});
-	</script>
+	<script type="text/javascript" src="init.js"></script>
   </body>
 </html>
