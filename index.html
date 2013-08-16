@@ -11,6 +11,7 @@
 	<style type="text/css">
 		html {
 			overflow-x: hidden;
+			height: 100%;
 		}
 		
 		body {
@@ -21,6 +22,7 @@
 			font-size: 13px;
 			color: #001C3D;
 			overflow-x: hidden;
+			height: 100%;
 			text-align: justify;
 		}
 		
@@ -55,6 +57,15 @@
 			border-bottom: 2px solid #CCCCCC;
 		}
 		
+		table {
+			width: 100%;
+			border-spacing: 0;
+		}
+		
+		tr {
+			width: 100%;
+		}
+		
 		p {
 			line-height: 1.5em;
 		}
@@ -82,11 +93,6 @@
 			text-align: center;
 		}
 		
-		.menu table {
-			width: 100%;
-			border-spacing: 0;
-		}
-		
 		.menu tr {
 			height: 110px;
 			vertical-align: bottom;
@@ -99,6 +105,7 @@
 		}
 		
 		.menu td#banner {
+			width: 100%:
 			padding-left: 10px;
 			text-align: left;
 		}
@@ -173,40 +180,55 @@
 			background-position: 0 22px;
 		}
 		
-		#upcomingevents {
+		#calendar {
 			color: #888888;
 			width: 100%;
 			height: 250px;
 			overflow-y: auto;
 		}
 		
-		#upcomingevents table {
-			width: 100%;
-			border-spacing: 0;
-		}
-		
-		#upcomingevents tr {
-			width: 100%;
-		}
-		
-		#upcomingevents td {
+		#calendar td {
 			border-bottom: 1px solid #DDDDDD;
 			padding: 10px 0 10px 0;
 			text-align: justify;
 		}
 		
-		#upcomingevents tr:first-child td {
+		#calendar tr:first-child td {
 			padding-top: 0;
 		}
 		
 		.footer {
-			display: table;
-			height: 50px;
+			margin: 0;
+			bottom: 0;
+			width: 100%;
+		}
+		
+		.footer table {
+			margin-top: 10px;
+			text-align: left;
+		}
+		
+		.footer table tr:first-child {
+			margin-top: 10px;
+		}
+		
+		.footer table tr:last-child {
+			margin-top: 50px;
+		}
+		
+		.footer table tr td:last-child {
+			width: 50%;
+			text-align: right;
+		}
+		
+		#copyright {
+			color: #AAAAAA;
+			font-size: 12px;
+			vertical-align: bottom;
+			padding-bottom: 5px;
 		}
 		
 		.footer p {
-			display: table-cell;
-			text-align: center;
 			vertical-align: bottom;
 		}
 	</style>
@@ -216,7 +238,7 @@
 		<div class="grid_12 menu">
 			<table>
 				<tr>
-					<td id="banner"><a href="#"><img src="images/banner.png"></a></td>
+					<td id="banner"><a href="#"><img src="images/banner.png" /></a></td>
 					<td><a href="#">Home</a></td>
 					<td><a href="#">About</a></td>
 					<td><a href="#">Events</a></td>
@@ -225,8 +247,8 @@
 					<td><a href="#">Donate</a></td>
 				</tr>
 			</table>
-			<hr />
 		</div>
+		<hr />
 		<div class="clear"></div>
 		<div class="grid_12 featurebar left">
 			<h1>Upcoming Events</h1>
@@ -242,14 +264,14 @@
 			<article>
 				<h1>About SBC</h1>
 				<p>The Sloan Business Club provides our 1,600+ members with an extensive selection of educational events, an expansive business network, and a solid mentorship base, enabling students to fully utilize their academic backgrounds in launching strong business careers.</p>
-				<p class="video"><a href="http://www.youtube.com/watch?v=-V3VtEpR4M8" class="html5lightbox"><img src="images/trans.png"></a></p>
+				<p class="video"><a href="http://www.youtube.com/watch?v=-V3VtEpR4M8" class="html5lightbox" title="MIT Sloan Business Club"><img src="images/trans.png" alt="Click to learn more about SBC!"></a></p>
 			</article>
 		</div>
 		<div class="grid_4 widget left right">
 			<article>
-				<h1>Upcoming Events</h1>
+				<h1>Calendar</h1>
 				<p />
-				<div id="upcomingevents">
+				<div id="calendar">
 					<table>
 						<tr><td><a href="">2012 Internship Networking Exclusive</a><br />Tuesday, Dec 4, 2012, 7:00 PM @ Marriott Hyatt</td></tr>
 						<tr><td><a href="">2012 Awards Convocation</a><br />Wednesday, May 9, 2012, 4:00 PM @ 10-250</td></tr>
@@ -259,14 +281,29 @@
 		</div>
 		<div class="grid_4 widget right">
 			<article>
-				<h1>Join Our Mailing List</h1>
+				<h1>Stay Connected</h1>
 				<p><form><input type="text" placeholder="your-email@mit.edu"><input type="submit" value="" class="subscribe"></form></p>
-				<p>Sign up to hear about upcoming networking events, panel discussions, and more!</p>
+				<p>Join our mailing list to hear about upcoming networking events, panel discussions, and more!</p>
 			</article>
 		</div>
 		<div class="clear"></div>
+		<hr />
 		<div class="grid_12 footer">
-			<p>&copy; 2013 MIT SBC</p>
+			<table>
+				<tr>
+					<td><a href="#">Home</a></td>
+					<td><a href="#">About</a></td>
+					<td><a href="#">Events</a></td>
+					<td><a href="#">Sponsors</a></td>
+					<td><a href="#">Contact Us</a></td>
+					<td><a href="#">Donate</a></td>
+					<td><a href="https://www.facebook.com/MITsbc"><img src="images/FB-f-Logo__blue_50.png" /></a></td>
+				</tr>
+				<tr>
+					<td colspan=6><a href="http://web.mit.edu/"><img src="http://web.mit.edu/graphicidentity/interface/mit-greygrey-footer1.gif" alt="MIT" width="334" height="36" border="0" /></a></td>
+					<td id="copyright">&copy; 2013 MIT SBC</td>
+				</tr>
+			</table>
 		</div>
     </div>
 	
